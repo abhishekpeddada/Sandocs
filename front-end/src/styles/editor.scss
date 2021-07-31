@@ -1,17 +1,7 @@
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #f3f3f3;
-	margin: 0;
-}
-
+/* 8.268 x 11.693 */
 .container .ql-editor {
-	width: 8.5in;
-	min-height: 11in;
+	width: 8.268in;
+	min-height: 11.693in;
 	padding: 1in;
 	margin: 1rem;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
@@ -41,12 +31,13 @@ body {
 
 @media print {
 	body {
+		height: auto;
 		background: none;
 	}
 
 	.container .ql-editor {
-		width: 6.5in;
-		height: 9in;
+		width: 6.268in;
+		height: 9.693in;
 		padding: 0;
 		margin: 0;
 		box-shadow: none;

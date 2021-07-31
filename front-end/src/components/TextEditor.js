@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Quill from 'quill'
 import 'quill/dist/quill.snow.css'
-import '../styles/editor.css'
+import '../styles/editor.scss'
 import { io } from 'socket.io-client'
 import { useParams } from 'react-router-dom'
 
