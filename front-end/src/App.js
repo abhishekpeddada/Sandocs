@@ -1,18 +1,19 @@
-import React from 'react'
-import TextEditor from './components/TextEditor'
+// import React from 'react'
+// import TextEditor from './components/TextEditor'
 import {
 	BrowserRouter as Router,
-	Switch,
-	Route,
-	Redirect,
+	// Switch,
+	// Route,
+	// Redirect,
 } from 'react-router-dom'
-import { v4 as uuidv4 } from 'uuid'
-import Header from './components/Header'
+// import { v4 as uuidv4 } from 'uuid'
+// import Header from './components/Header'
+import NavBar from './components/Home/Nav-bar'
 
 const App = () => {
 	return (
 		<Router>
-			<Switch>
+			{/* <Switch>
 				<Route path='/' exact>
 					<Redirect to={`/documents/${uuidv4()}`} />
 				</Route>
@@ -20,7 +21,8 @@ const App = () => {
 					<Header />
 					<TextEditor />
 				</Route>
-			</Switch>
+			</Switch> */}
+			<NavBar />
 		</Router>
 	)
 }
