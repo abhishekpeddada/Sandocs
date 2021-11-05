@@ -1,7 +1,7 @@
 @import './variables';
 
 .nav-toggle {
-	position: absolute;
+	position: fixed;
 	top: 40px;
 	right: 40px;
 	padding: 10px;
@@ -72,11 +72,10 @@
 				}
 			}
 		}
-
 		.btn {
 			color: $black;
 			background: $white;
-			padding: 11px 22px;
+			padding: 1px 22px;
 			border: none;
 			border-radius: 30px;
 			&:hover {

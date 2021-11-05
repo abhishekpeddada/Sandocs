@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+	width: calc(100% - 90px);
+
+	img {
+		height: 50px;
+		margin-left: 40px;
+	}
+	.btn-group {
+		.auth-btn {
+			color: $white;
+			background: $black;
+			padding: 11px 22px;
+			text-decoration: none;
+			font-size: 36px;
+			font-weight: bold;
+			font-variant: small-caps;
+			margin-right: 30px;
+			border: none;
+			border-radius: 20px;
+			font-family: Sunnyville;
+			&:hover {
+				color: rgba($color: $black, $alpha: 1);
+				background: $yellow;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.btn-group {
+		display: none;
+	}
+}

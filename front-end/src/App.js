@@ -6,9 +6,11 @@ import {
 	// Route,
 	// Redirect,
 } from 'react-router-dom'
+import Footer from './components/Footer'
+import Hero from './components/Home/Hero'
 // import { v4 as uuidv4 } from 'uuid'
 // import Header from './components/Header'
-import NavBar from './components/Home/Nav-bar'
+import NavBar from './components/Home/NavBar'
 
 const App = () => {
 	return (
@@ -23,6 +25,8 @@ const App = () => {
 				</Route>
 			</Switch> */}
 			<NavBar />
+			<Hero />
+			<Footer />
 		</Router>
 	)
 }

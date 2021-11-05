@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import '../../styles/header.scss'
+import '../../styles/menu.scss'
 
 const Header = () => {
 	const [fill, setFill] = useState('#FFBE00')
