@@ -1,6 +1,14 @@
-require('dotenv').config()
 const mongoose = require('mongoose')
 const Document = require('./Document')
+const dotenv = require('dotenv')
+
+const result = dotenv.config()
+
+if (result.error) {
+	throw result.error
+}
+
+console.log(result.parsed)
 
 const port = process.env.PORT || 5000
 const io = require('socket.io')(port, {
@@ -11,13 +19,9 @@ const io = require('socket.io')(port, {
 })
 
 const uri = process.env.MONGO_URI
+
 mongoose
-	.connect(uri, {
-		useNewUrlParser: true,
-		useCreateIndex: true,
-		useUnifiedTopology: true,
-		useFindAndModify: false,
-	})
+	.connect(uri)
 	.then(() => console.log('MongoDB connection is established successfully 🎉'))
 	.catch((err) => console.log(err))
 
